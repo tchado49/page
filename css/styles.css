@@ -105,9 +105,43 @@ body{
 
 /* Principale ThumbnailMenu Section  */
 
-/*.item1 {
+.item0 {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    display: grid;
+    gap: 10px;
+    border: #000;
+    background: #222;
+    position: absolute;	
+    top: 40%;
+    left: 25%;
+    border-radius: 10px;
+}
+
+.item0 img{
+    border: 2px solid;
+    border-color : transparent;
     width: 80px;
     height: 80px;
+    object-fit: cover;
+    
+}
+.item0 img:hover {
+    border-color : DodgerBlue;
+}
+
+
+.item0 label{
+    width: 70%;
+    height: 70%;
+    color: #000;
+    margin-left: 8px;
+}
+
+.item1 {
+    width: 400px;
+    height: 200px;
     position: relative;
     display: grid;
     gap: 10px;
@@ -137,7 +171,7 @@ body{
     height: 70%;
     color: #000;
     margin-left: 8px;
-}*/
+}
 
 .item2 {
     width: 80px;
@@ -171,9 +205,9 @@ body{
     margin-left: 8px;
 }
 
-/*.item3 {
-    width: 80px;
-    height: 80px;
+.item3 {
+    width: 400px;
+    height: 200px;
     position: relative;
     display: grid;
     gap: 10px;
@@ -202,4 +236,4 @@ body{
     height: 70%;
     color: #000;
     margin-left: 8px;
-}*/
+}
