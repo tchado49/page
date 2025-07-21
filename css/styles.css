@@ -105,7 +105,7 @@ body{
 
 /* Principale ThumbnailMenu Section  */
 
-.item1 {
+/*.item1 {
     width: 80px;
     height: 80px;
     position: relative;
@@ -137,7 +137,7 @@ body{
     height: 70%;
     color: #000;
     margin-left: 8px;
-}
+}*/
 
 .item2 {
     width: 80px;
@@ -171,7 +171,7 @@ body{
     margin-left: 8px;
 }
 
-.item3 {
+/*.item3 {
     width: 80px;
     height: 80px;
     position: relative;
@@ -202,4 +202,4 @@ body{
     height: 70%;
     color: #000;
     margin-left: 8px;
-}
+}*/
