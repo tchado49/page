@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLICATION</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+            <div class="item1">
+		 <img id="get1" src="" alt="">
+		 <label id="get1" title="Select-one"> Table </label>
+            </div>
+		<div class="item2">
+	   		<a aria-label="Chat on WhatsApp" href="https://wa.me/2693378315"><img alt="Chat on WhatsApp" src="buttonWhatsapp.png" />
+          		<a />
+		</div>
+
+
+	<script>
+		let body = document.querySelector('body');
+		let page0 = document.getElementById('get1');
+		let item1 = document.querySelector('.item1');
+		let item2 = document.querySelector('.item2');
+		let active = false; body.style.backgroundColor = "#eee";
+
+		page0.onclick = function(event){
+			window.location.replace("indextable.html");
+		}
+
+		if (window.innerWidth <= 525 && active == false) {
+			item1.style.height = "80px"; item1.style.width = "80px"; //chartHisto.style.display = "flex";
+        		item1.style.left = "5%";
+			item2.style.height = "80px"; item2.style.width = "80px"; item2.style.left = "35%";
+			//item3.style.height = "80px"; item3.style.width = "80px"; item3.style.left = "5%";
+			item1.style.top = "20%"; item2.style.top = "20%"; //item3.style.top = "45%";
+			active = true; //alert('resizing 000 !');
+		}
+
+		const options = {
+  			enableHighAccuracy: true,
+  			timeout: 5000,
+  			maximumAge: 0,
+		};
+
+		function success(pos) {
+  			const crd = pos.coords;
+
+  			console.log("Your current position is:");
+  			console.log(`Latitude : ${crd.latitude}`);
+  			console.log(`Longitude: ${crd.longitude}`);
+  			console.log(`More or less ${crd.accuracy} meters.`);
+		}
+
+		function error(err) {
+  			console.warn(`ERROR(${err.code}): ${err.message}`);
+		}
+
+		navigator.geolocation.getCurrentPosition(success, error, options);
+
+
+                window.addEventListener('resize', e => {
+  			
+  		if (e.currentTarget.innerWidth <= 525 && active == false) {
+			
+			item1.style.height = "80px"; item1.style.width = "80px"; //chartHisto.style.display = "flex";
+        		item1.style.left = "5%";
+			item2.style.height = "80px"; item2.style.width = "80px"; item2.style.left = "35%";
+			//item3.style.height = "80px"; item3.style.width = "80px"; item3.style.left = "5%";
+			item1.style.top = "20%"; item2.style.top = "20%"; //item3.style.top = "45%";
+			active = true; //alert('resizing 000 !');
+ 
+  		}
+  		if (e.currentTarget.innerWidth >= 600 && active == true) {
+			
+        		item1.style.height = "80px"; item1.style.width = "80px"; //chartHisto.style.display = "flex";
+        		item1.style.left = "25%";
+			item2.style.height = "80px"; item2.style.width = "80px"; item2.style.left = "45%";
+			//item3.style.height = "80px"; item3.style.width = "80px"; item3.style.left = "65%";
+			item1.style.top = "40%"; item2.style.top = "40%"; //item3.style.top = "40%"; 
+			active = false; //alert('resizing 000 !');
+ 
+  		}
+		//alert('resizing !');
+
+		})
+
+	</script>
+
+</body>
+</html>
