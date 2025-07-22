@@ -37,7 +37,7 @@
 			//window.location.replace("indextable.html");
 			let user_number = document.getElementById('username').value;
 			fetch(url,{ method: 'POST', mode: 'cors',
-  					headers: {'Access-Control-Allow-Origin':'*'},
+  					headers: {'Access-Control-Allow-Origin':'*','Content-Type': 'application/json'},
 				   	body: JSON.stringify({ id: '0', user: user_number, long: longitude, lat: latitude  }) })
         			.then(response => response.text())
         			.then(data => {
