@@ -6,8 +6,9 @@
 }
 body{
   display: grid;
+  gap: 20px;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   min-height: 100vh;
   background-color: #000;
   background-size: cover;
@@ -107,7 +108,7 @@ body{
 
 .item0 {
     width: 400px;
-    height: 200px;
+    height: 150px;
     position: relative;
     display: grid;
     gap: 10px;
@@ -141,7 +142,7 @@ body{
 
 .item1 {
     width: 400px;
-    height: 200px;
+    height: 150px;
     position: relative;
     display: grid;
     gap: 10px;
@@ -207,9 +208,9 @@ body{
 
 .item3 {
     width: 400px;
-    height: 200px;
+    height: 150px;
     position: relative;
-    display: grid;
+    display: none;
     gap: 10px;
     border: #000;
     background: #222;
