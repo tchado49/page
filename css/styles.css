@@ -107,12 +107,12 @@ body{
 
 .item0 {
     width: 400px;
-    height: 150px;
+    height: 80px;
     position: relative;
     display: grid;
     gap: 10px;
-    border: #000;
-    background: #222;
+    border: transparent;
+    background: transparent;
     position: absolute;	
     top: 10%;
     left: 25%;
@@ -182,7 +182,7 @@ body{
     border: #000;
     background: #222;
     position: absolute;	
-    top: 40%;
+    top: 50%;
     left: 45%;
     border-radius: 10px;
 }
@@ -212,16 +212,16 @@ body{
     display: none;
     gap: 10px;
     border: lightgreen;
-    background: #222;
+    background: lightgreen;
     position: absolute;	
-    top: 50%;
+    top: 60%;
     left: 65%;
     border-radius: 10px;
 }
 
 .item3 img{
     border: 2px solid;
-    border-color : transparent;
+    border-color : DodgerBlue;
     width: 80px;
     height: 80px;
     object-fit: cover;
